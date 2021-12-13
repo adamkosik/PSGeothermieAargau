@@ -78,7 +78,7 @@ def export_shemat_suite_input_file(geo_model, lithology_block, output: str="vtk 
                                    top_temp_bcs_file: str=None, hf_bcs_file: str=None, 
                                    hf_value: float=0.07, conduction_only: bool=True,
                                    data_file: str=None, borehole_logs: np.array=None,
-                                   lateral_boundaries: str='noflow',
+                                   lateral_boundaries: str='closed',
                                    path: str=None, filename: str='geo_model_SHEMAT_input_erode'):
     """Method to export a 3D geological model as SHEMAT-Suite input-file for a conductive HT-simulation. 
 
@@ -91,6 +91,7 @@ def export_shemat_suite_input_file(geo_model, lithology_block, output: str="vtk 
         top_temp_bcs_file (str, optional): boundary condition file for spatially varying boundary conditions (e.g. temperature due to topography). Defaults to None.
         data_file (str, optional): data for calibrating the model, e.g. temperatures from boreholes. Defaults to None.
         borehole_logs (np.array, optional): coordinates for synthetic borehole logs, will write parameters such as pressure and temperature. Defaults to None.
+        lateral_boundaries (str, optional): Lateral BCs. Defaults to 'closed'.
         path (str, optional): save path for the SHEMAT-Suite input file. Defaults to None.
         filename (str, optional): name of the SHEMAt-Suite input file. Defaults to 'geo_model_SHEMAT_input_erode'.
     """
@@ -171,6 +172,8 @@ def export_shemat_suite_input_file(geo_model, lithology_block, output: str="vtk 
 
         # head bcd, simple=front, error=ignore, value=init\n
         # temp bcd, simple=front, error=ignore, value=init\n"""
+    else:
+        raise(f"Unknown lateral boundaries condition: {lateral_boundaries}.") 
 
         
     if data_file is None:
