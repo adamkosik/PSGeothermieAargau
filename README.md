@@ -73,7 +73,7 @@ followed by the import of the module
     import OpenWF as owf
 ```
 
-This package has been tested with Python 3.8 and works best currently with this pyhton Version.
+This package has been tested with Python 3.8 and works best currently with this python Version.
 
 `OpenWF` depends on a couple of other Python libraries:
 
@@ -90,9 +90,9 @@ functioning anaconda environments for working with `OpenWF`.
 
 ## 💭 Feedback and Contributing
 
-With regards to the scientific content, feel free to open a [disussion](https://github.com/GEG-ETHZ/PSGeothermieAargau/discussions). You are actively invited to open an [issue](https://github.com/GEG-ETHZ/PSGeothermieAargau/issues) for bugs/feature requests.
+With regards to the scientific content, feel free to open a [discussion](https://github.com/GEG-ETHZ/PSGeothermieAargau/discussions). You are actively invited to open an [issue](https://github.com/GEG-ETHZ/PSGeothermieAargau/issues) for bugs/feature requests.
 
-This project was meant as a pilot study to kick things off. Contributions to keep this project going and extend its capabilities is welcome. More detailed DEVELOPMENT and CONTRIBUTING guides will follow.
+This project was meant as a pilot study to kick things off. Contributions to keep this project going and extend its capabilities are welcome. More detailed DEVELOPMENT and CONTRIBUTING guides will follow.
 
 
 ## 📜 License  
