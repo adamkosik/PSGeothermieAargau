@@ -3,3 +3,10 @@ sphinx-gallery
 sphinx_rtd_theme
 matplotlib
 pandas
+pyvista
+gempy
+h5py
+seaborn
+ipyvtklink
+ipycanvas
+numpy
